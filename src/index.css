@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #0F1C2E;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2rem;
+}
+.square {
+  background-color: #1F3A5F;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#cell_1 {
+  border-top-left-radius: 24px;
+}
+#cell_3 {
+  border-top-right-radius: 24px;
+}
+#cell_7 {
+  border-bottom-left-radius: 24px;
+}
+#cell_9 {
+  border-bottom-right-radius: 24px;
+}
+p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.turns {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  gap: 2rem;
+}
+.turns .square {
+  cursor: default;
+  width: 4.37rem;
+  height: 4.37rem;
+  border-radius: 1rem;
+}
+#cell_actual {
+  background-color: rgb(138, 138, 252);
+}
+.x-square {
+  color: #f0bd7a;
+}
+.o-square {
+  color: #9de9d6;
+}
